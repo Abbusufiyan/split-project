@@ -1,0 +1,29 @@
+body{
+    background-color: bisque;
+    margin: 0;
+}
+#lo{
+    height: 35px
+}
+#nav{
+    height: 7vh;
+    display: flex;
+    border-radius:25px ;
+    justify-content: space-between;
+    background: rgb(252, 248, 248);
+    align-items: center;
+}
+#search{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 10px; 
+    border-radius: 25px;
+
+}
+#logo{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    gap: 5px;
+}
