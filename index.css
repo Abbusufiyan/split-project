@@ -18,7 +18,7 @@ body{
     justify-content: flex-end;
     align-items: center; 
     gap: 10px; 
-    border-radius: 25px;
+
 
 }
 #logo{
@@ -26,4 +26,59 @@ body{
     padding-left: 20px;
     align-items: center;
     gap: 5px;
+}
+
+#hero{
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+
+}
+#card1{
+    margin-top: 30px;
+    background: #fcf9f9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 10px;
+}
+#top{
+    display: flex;
+    justify-content: start;
+    margin-top: 0px;
+
+    
+}
+#item{
+    display: flex;
+    flex-direction:column;
+    gap: 190px;
+}
+#name{
+    display: flex;
+    flex-direction:column;
+}
+
+#box{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 170px 170px 170px 170px;
+    margin-bottom: 20px;
+}
+
+#p{
+    margin-bottom: 0%;
+    word-spacing: 180px;
+}
+
+#names{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:  100px 100px 100px 100px 200px;
 }
