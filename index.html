@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPLIT APPLICATION</title>
     <link rel="stylesheet" href="index.css">
+   
+
 </head>
 <body>
-    <head><a href="http://">
-
-    </a></head>
+    
     <nav id="nav">
        <div id="logo">
           <img id="lo" src="logo.png" alt="logo">
@@ -43,10 +43,10 @@
             </div>
             <div id="box">
 
-                 <input type="number">
-                  <input type="text" placeholder=" e.g Dinner">
-                  <input type="text">
-                  <input type="text">
+                 <input type="number" id="amount">
+                  <input type="text" placeholder=" e.g Dinner" id="discription">
+                  <input type="text" id="PaidBy">
+                  <input type="text" id="nam" placeholder="use space to sperates the names">
 
             </div>
             <div id="names">
@@ -54,7 +54,7 @@
                   <button>SUFIYAN</button>
                   <button>HEMU</button>
                   <button>RAKESH</button>
-                 <button>+ Add EXPENTIONS</button>
+                 <button id="submit">+ Add EXPENTIONS</button>
             </div>
         </div>
         
@@ -81,6 +81,16 @@
 
 
         </div>
+      
+        <div id="card3">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+        </div>
+    
+    
     </section>
 
 
@@ -90,5 +100,25 @@
 
 
 
+
 </body>
+
+ <script>
+        function inputs (){
+                  
+            const total_amount = document.getElementById("amount").value; 
+            const paid_by = document.getElementById("PaidBy").value;
+            const discription = document.getElementById("discription").value;
+            const split_bet = document.getElementById("nam").value;
+
+            const split_between = split_bet.split(",");
+
+            console.log(total_amount);
+
+        }
+
+      document.getElementById("submit").onclick = inputs;
+
+
+    </script>
 </html>
