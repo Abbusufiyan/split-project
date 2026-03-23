@@ -92,7 +92,7 @@ body{
 
 
 #card2{
-     margin-top: 30px;
+    margin-top: 30px;
     background: #fcf9f9;
     border-radius: 10px;
     display: flex;
@@ -114,5 +114,21 @@ body{
     display: grid;
     gap: 15px;
     grid-template-columns: 100px 100px 100px 100px ;
+}
+
+#card3{
+     margin-top: 30px;
+    background: #fcf9f9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 10px;
+    justify-content: flex-start;
 }
 

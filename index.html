@@ -38,6 +38,7 @@
                     DISCRIPTION 
                     PAID-BY
                     SPLITS-BETWEEN
+                    Number Of People
                 </p>
 
             </div>
@@ -47,14 +48,14 @@
                   <input type="text" placeholder=" e.g Dinner" id="discription">
                   <input type="text" id="PaidBy">
                   <input type="text" id="nam" placeholder="use space to sperates the names">
-
+                  <input type="text" id="numofper" placeholder="">
             </div>
             <div id="names">
                   <button>ADITYA</button>
                   <button>SUFIYAN</button>
                   <button>HEMU</button>
                   <button>RAKESH</button>
-                 <button id="submit">+ Add EXPENTIONS</button>
+                  <button id="submit">+ Add EXPENTIONS</button>
             </div>
         </div>
         
@@ -83,11 +84,13 @@
         </div>
       
         <div id="card3">
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
+            
+         <div> </div>
+         <div> </div>
+         <div> </div>
+         <div> </div>
+         <div> </div>
+
         </div>
     
     
@@ -112,12 +115,16 @@
             const split_bet = document.getElementById("nam").value;
 
             const split_between = split_bet.split(",");
-
+            const total_person = document.getElementById("numofper");
             console.log(total_amount);
 
         }
 
       document.getElementById("submit").onclick = inputs;
+
+      function PerHead(){
+         const perhead = total_amount/
+      }
 
 
     </script>
