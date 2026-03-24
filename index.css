@@ -132,3 +132,24 @@ body{
     justify-content: flex-start;
 }
 
+.item{
+    display: flex;
+}
+
+.item #p1{
+     margin-left: 10 px;
+     margin-right: 180px;
+}
+.item #p2{
+     margin-right: 170px;
+}
+.item #p3{
+     margin-right: 205px;
+}
+
+#p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}

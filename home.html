@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPLIT APPLICATION</title>
+
+<link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+
+<div class="logo">
+<img src="logo.png">
+<a style="text-decoration:none;color:black;font-weight:bold;">Split..IT</a>
+</div>
+
+<div class="search">
+<input placeholder="Search">
+<button>GO</button>
+</div>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<!-- CARD 1 -->
+<div class="card">
+
+<div>
+<button>+</button> Add Expense
+</div>
+
+<div class="header-row">
+<p>AMOUNT ($)</p>
+<p>DESCRIPTION</p>
+<p>PAID BY</p>
+<p>SPLIT BETWEEN</p>
+</div>
+
+<div class="input-row">
+<input type="number" class="amount">
+<input type="text" placeholder="e.g Dinner" class="description">
+<input type="text" class="paidby">
+<input type="text" placeholder="use space to separate names" class="split">
+</div>
+
+<div class="extra-row">
+<p>NUMBER OF PEOPLE</p>
+<input type="text" class="people">
+</div>
+
+<button class="submit">SUBMIT</button>
+
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+
+<div>
+<button>@</button> Friend
+</div>
+
+<div class="friend-add">
+<input type="text" placeholder="Enter Friend's Name....">
+<button>+ Add</button>
+</div>
+
+<div class="friend-list">
+<button>Sufiyan</button>
+<button>ADITYA</button>
+<button>Hemu</button>
+<button>Rakesh</button>
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+<div class="card card3">
+<div>Expenses will appear here</div>
+</div>
+
+</section>
+
+
+<script>
+
+function inputs(){
+
+const total_amount = document.querySelector(".amount").value;
+const paid_by = document.querySelector(".paidby").value;
+const description = document.querySelector(".description").value;
+const split_bet = document.querySelector(".split").value;
+
+const split_between = split_bet.split(" ");
+const total_person = document.querySelector(".people").value;
+
+const per_head = total_amount / total_person;
+const headonpaider = total_amount - per_head;
+
+console.log("Paid By:",paid_by);
+console.log("Description:",description);
+console.log("Per Head:",per_head);
+console.log("Remaining:",headonpaider);
+console.log("Split:",split_between);
+
+}
+
+document.querySelector(".submit").onclick = inputs;
+
+</script>
+
+</body>
+</html>
